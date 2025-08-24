@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SKYNET - Institute of Computer Education & Information Technology</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Particle Background -->
+    <div id="particles"></div>
+    
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">SKYNET</span>
+                <span class="logo-subtitle">GET SKILLED TOWARDS EXCELLENCE</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About Us</a></li>
+                <li><a href="#courses" class="nav-link">Courses</a></li>
+                <li><a href="#fees" class="nav-link">Fee Structure</a></li>
+                <li><a href="#feedback" class="nav-link">Feedback</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="glitch" data-text="SKYNET">SKYNET</h1>
+                <p class="hero-subtitle">Institute of Computer Education & Information Technology</p>
+                <div class="certification-badge">
+                    <span class="badge-text">ISO 9001:2015 Certified Institute</span>
+                </div>
+                <p class="hero-caption">Get skilled towards excellence</p>
+                <div class="hero-buttons">
+                    <button class="cta-btn primary" onclick="redirectToWhatsApp()">
+                        <span>Register Now</span>
+                        <div class="btn-glow"></div>
+                    </button>
+                    <button class="cta-btn secondary" onclick="scrollToSection('courses')">
+                        <span>Explore Courses</span>
+                    </button>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="floating-elements">
+                    <div class="floating-icon code">&lt;/&gt;</div>
+                    <div class="floating-icon data">📊</div>
+                    <div class="floating-icon ai">🤖</div>
+                    <div class="floating-icon web">🌐</div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About SKYNET</h2>
+                <div class="title-underline"></div>
+            </div>
+            <div class="about-grid">
+                <div class="about-card">
+                    <div class="card-icon">🎯</div>
+                    <h3>Our Mission</h3>
+                    <p>To provide world-class computer education and information technology training that empowers students with practical skills for the digital age.</p>
+                </div>
+                <div class="about-card">
+                    <div class="card-icon">⭐</div>
+                    <h3>ISO 9001:2015 Certified</h3>
+                    <p>We maintain the highest standards of quality education, certified by international quality management standards.</p>
+                </div>
+                <div class="about-card">
+                    <div class="card-icon">🚀</div>
+                    <h3>Future Ready</h3>
+                    <p>Our courses are designed to meet industry demands and prepare students for the rapidly evolving tech landscape.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Courses Section -->
+    <section id="courses" class="courses">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Courses</h2>
+                <div class="title-underline"></div>
+            </div>
+            <div class="courses-grid">
+                <div class="course-card" onclick="redirectToWhatsApp()">
+                    <div class="card-header">
+                        <div class="course-icon">💻</div>
+                        <h3>COMPUTER EDUCATION</h3>
+                    </div>
+                    <div class="card-body">
+                        <p>Comprehensive computer fundamentals and applications for all levels</p>
+                        <div class="course-highlight">Foundation to Advanced Computing</div>
+                    </div>
+                    <div class="card-footer">
+                        <button class="course-btn">Enroll Now</button>
+                    </div>
+                </div>
+
+                <div class="course-card" onclick="redirectToWhatsApp()">
+                    <div class="card-header">
+                        <div class="course-icon">💻</div>
+                        <h3>IT COURSES</h3>
+                    </div>
+                    <div class="card-body">
+                        <p>Information Technology courses covering modern IT skills and applications</p>
+                        <div class="course-highlight">Industry-Ready IT Skills</div>
+                    </div>
+                    <div class="card-footer">
+                        <button class="course-btn">Enroll Now</button>
+                    </div>
+                </div>
+
+                <div class="course-card" onclick="redirectToWhatsApp()">
+                    <div class="card-header">
+                        <div class="course-icon">⚙️</div>
+                        <h3>HARDWARE | SOFTWARE</h3>
+                    </div>
+                    <div class="card-body">
+                        <p>Complete training in computer hardware assembly, maintenance and software installation</p>
+                        <div class="course-highlight">Hands-on Technical Training</div>
+                    </div>
+                    <div class="card-footer">
+                        <button class="course-btn">Enroll Now</button>
+                    </div>
+                </div>
+
+                <div class="course-card" onclick="redirectToWhatsApp()">
+                    <div class="card-header">
+                        <div class="course-icon">📊</div>
+                        <h3>TALLY PRIME WITH GST</h3>
+                    </div>
+                    <div class="card-body">
+                        <p>Master Tally Prime software with GST implementation for accounting and business management</p>
+                        <div class="course-highlight">Professional Accounting Skills</div>
+                    </div>
+                    <div class="card-footer">
+                        <button class="course-btn">Enroll Now</button>
+                    </div>
+                </div>
+
+                <div class="course-card" onclick="redirectToWhatsApp()">
+                    <div class="card-header">
+                        <div class="course-icon">🎓</div>
+                        <h3>VOCATIONAL COURSES</h3>
+                    </div>
+                    <div class="card-body">
+                        <p>Skill-based vocational training programs for career development and employment</p>
+                        <div class="course-highlight">Career-Focused Training</div>
+                    </div>
+                    <div class="card-footer">
+                        <button class="course-btn">Enroll Now</button>
+                    </div>
+                </div>
+
+                <div class="course-card" onclick="redirectToWhatsApp()">
+                    <div class="card-header">
+                        <div class="course-icon">🌐</div>
+                        <h3>WEB DESIGNING</h3>
+                    </div>
+                    <div class="card-body">
+                        <p>Create stunning websites with HTML, CSS, JavaScript and modern web technologies</p>
+                        <div class="course-highlight">Creative Web Development</div>
+                    </div>
+                    <div class="card-footer">
+                        <button class="course-btn">Enroll Now</button>
+                    </div>
+                </div>
+
+                <div class="course-card" onclick="redirectToWhatsApp()">
+                    <div class="card-header">
+                        <div class="course-icon">⌨️</div>
+                        <h3>DATA ENTRY</h3>
+                    </div>
+                    <div class="card-body">
+                        <p>Professional data entry skills with speed and accuracy training</p>
+                        <div class="course-highlight">Fast & Accurate Data Processing</div>
+                    </div>
+                    <div class="card-footer">
+                        <button class="course-btn">Enroll Now</button>
+                    </div>
+                </div>
+
+                <div class="course-card" onclick="redirectToWhatsApp()">
+                    <div class="card-header">
+                        <div class="course-icon">⌨️</div>
+                        <h3>TYPING</h3>
+                    </div>
+                    <div class="card-body">
+                        <p>Improve typing speed and accuracy with professional techniques</p>
+                        <div class="course-highlight">Speed & Precision Training</div>
+                    </div>
+                    <div class="card-footer">
+                        <button class="course-btn">Enroll Now</button>
+                    </div>
+                </div>
+
+                <div class="course-card" onclick="redirectToWhatsApp()">
+                    <div class="card-header">
+                        <div class="course-icon">🎓</div>
+                        <h3>ADVANCED COURSES</h3>
+                    </div>
+                    <div class="card-body">
+                        <p>Specialized advanced technology courses for professional development</p>
+                        <div class="course-highlight">Expert-Level Training</div>
+                    </div>
+                    <div class="card-footer">
+                        <button class="course-btn">Enroll Now</button>
+                    </div>
+                </div>
+
+                <div class="course-card" onclick="redirectToWhatsApp()">
+                    <div class="card-header">
+                        <div class="course-icon">🔧</div>
+                        <h3>IT SERVICES</h3>
+                    </div>
+                    <div class="card-body">
+                        <p>Complete IT support services and technical assistance</p>
+                        <div class="course-highlight">Professional IT Support</div>
+                    </div>
+                    <div class="card-footer">
+                        <button class="course-btn">Enroll Now</button>
+                    </div>
+                </div>
+
+                <div class="course-card" onclick="redirectToWhatsApp()">
+                    <div class="card-header">
+                        <div class="course-icon">📜</div>
+                        <h3>CCC UPTO 8th STANDARD</h3>
+                    </div>
+                    <div class="card-body">
+                        <p>Course on Computer Concepts certification for students up to 8th standard</p>
+                        <div class="course-highlight">Government Certified Course</div>
+                    </div>
+                    <div class="card-footer">
+                        <button class="course-btn">Enroll Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fee Structure Section -->
+    <section id="fees" class="fees">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Fee Structure</h2>
+                <div class="title-underline"></div>
+            </div>
+            <div class="fee-grid">
+                <div class="fee-card basic">
+                    <div class="fee-header">
+                        <h3>Basic Courses</h3>
+                        <div class="price">₹3,000 - ₹5,000</div>
+                    </div>
+                    <ul class="fee-features">
+                        <li>Computer Fundamentals</li>
+                        <li>Computer | Typewriter Typing</li>
+                        <li>Diploma in office automation</li>
+                        <li>Certificate Courses</li>
+                    </ul>
+                    <button class="fee-btn" onclick="redirectToWhatsApp()">Get Details</button>
+                </div>
+
+                <div class="fee-card premium">
+                    <div class="popular-badge">Most Popular</div>
+                    <div class="fee-header">
+                        <h3>Professional Courses</h3>
+                        <div class="price">₹5,000 - ₹10,000</div>
+                    </div>
+                    <ul class="fee-features">
+                        <li>Web Development</li>
+                        <li>Hardware & Software</li>
+                        <li>Advanced Applications</li>
+                        <li>Industry Certification</li>
+                        <li>Job Assistance</li>
+                    </ul>
+                    <button class="fee-btn" onclick="redirectToWhatsApp()">Get Details</button>
+                </div>
+
+                <div class="fee-card advanced">
+                    <div class="fee-header">
+                        <h3>Advanced Courses</h3>
+                        <div class="price">₹12,000+</div>
+                    </div>
+                    <ul class="fee-features">
+                        <li>Computer Hardware Mastery course</li>
+                        <li>Data Entry and Data Cleaning</li>
+                        <li>Google sheet mastery course</li>
+                        <li>Diploma in desktop publishing</li>
+                        <li>Diploma in graphic designing</li>
+                    </ul>
+                    <button class="fee-btn" onclick="redirectToWhatsApp()">Get Details</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Feedback Section -->
+    <section id="feedback" class="feedback">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Student Feedback</h2>
+                <div class="title-underline"></div>
+            </div>
+            <div class="feedback-slider">
+                <div class="feedback-card active">
+                    <div class="feedback-content">
+                        <div class="stars">⭐⭐⭐⭐⭐</div>
+                        <p>"SKYNET Institute provided excellent training in web development. The practical approach and experienced faculty helped me land my dream job!"</p>
+                        <div class="student-info">
+                            <strong>Muneeb Fayaz</strong>
+                            <span>Web Developer</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="feedback-card">
+                    <div class="feedback-content">
+                        <div class="stars">⭐⭐⭐⭐⭐</div>
+                        <p>"The computer hardware course was comprehensive and hands-on. I now run my own computer repair business thanks to SKYNET!"</p>
+                        <div class="student-info">
+                            <strong>JAVAID AHMAD</strong>
+                            <span>Computer Expert</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="feedback-card">
+                    <div class="feedback-content">
+                        <div class="stars">⭐⭐⭐⭐⭐</div>
+                        <p>"Best institute in Srinagar for IT courses. The faculty is supportive and the infrastructure is top-notch!"</p>
+                        <div class="student-info">
+                            <strong>ASRA </strong>
+                            <span>Paint Specialist</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="feedback-dots">
+                <span class="dot active" onclick="showFeedback(0)"></span>
+                <span class="dot" onclick="showFeedback(1)"></span>
+                <span class="dot" onclick="showFeedback(2)"></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Contact Us</h2>
+                <div class="title-underline"></div>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <div class="contact-icon">📍</div>
+                        <h3>Address</h3>
+                        <p>Main Market Brein Near JK Bank<br>Brein Srinagar, 191121<br>Jammu and Kashmir, India</p>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">📞</div>
+                        <h3>Phone Numbers</h3>
+                        <p><a href="tel:+919797865597">+91 9797865597</a></p>
+                        <p><a href="tel:+917006294964">+91 7006294964</a></p>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">✉️</div>
+                        <h3>Email</h3>
+                        <p><a href="mailto:skynetservices786@gmail.com">skynetservices786@gmail.com</a></p>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">📱</div>
+                        <h3>Social Media</h3>
+                        <p><a href="https://instagram.com/skynet___institute" target="_blank">@skynet___institute</a></p>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <h3>Send us a Message</h3>
+                    <form onsubmit="handleFormSubmit(event)">
+                        <div class="form-group">
+                            <input type="text" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" placeholder="Your Phone">
+                        </div>
+                        <div class="form-group">
+                            <select required>
+                                <option value="">Select Course Interest</option>
+                                <option value="computer-education">Computer Education</option>
+                                <option value="web-designing">Web Designing</option>
+                                <option value="hardware-software">Hardware & Software</option>
+                                <option value="data-entry">Data Entry & Typing</option>
+                                <option value="advanced">Advanced Courses</option>
+                                <option value="ccc">CCC Course</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Your Message" rows="4"></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">
+                            <span>Send Message</span>
+                            <div class="btn-glow"></div>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>SKYNET Institute</h3>
+                    <p>ISO 9001:2015 Certified Institute of Computer Education & Information Technology</p>
+                    <div class="social-links">
+                        <a href="https://instagram.com/skynet___institute" target="_blank" class="social-link">
+                            <span>📷</span>
+                        </a>
+                        <a href="tel:+919797865597" class="social-link">
+                            <span>📞</span>
+                        </a>
+                        <a href="mailto:skynetservices786@gmail.com" class="social-link">
+                            <span>✉️</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#courses">Courses</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p>📍 Main Market Brain Near JK Bank<br>Brein Srinagar, 191121</p>
+                    <p>📞 +91 9797865597</p>
+                    <p>✉️ skynetservices786@gmail.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 SKYNET Institute. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
